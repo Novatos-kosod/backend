@@ -8,7 +8,7 @@ export const login = async (req, res) => {
     }
    
     if (user.password !== password) {
-        return res.status(401).json({ message: 'Invalid password' });
+        return res.status(401).json({ message: 'Invalid email or password' });
     } else {
         let userFound = {
             _id: user._id,
