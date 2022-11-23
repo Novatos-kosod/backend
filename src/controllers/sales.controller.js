@@ -1,6 +1,5 @@
 import Sale from '../models/Sale.js';
 import Product from '../models/Product.js';
-// import User from '../models/User.js';
 
 export const createSale = async (req, res) => {
     const {date, total, products} = req.body;
